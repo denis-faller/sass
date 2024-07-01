@@ -1,0 +1,20 @@
+// Comment
+$bgcolor: #000;
+$blockWidth: 300px;
+$border: 4px red solid;
+
+.block:not(.first){
+    background-color: $bgcolor;
+    height: 200px;
+    width: $blockWidth;
+    border: $border;
+    margin-bottom: 20px;
+}
+
+.first{
+    background-color: $bgcolor;
+    height: 200px;
+    width: $blockWidth;
+    border: $border;
+    margin-bottom: 20px;
+}

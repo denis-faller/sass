@@ -1,0 +1,17 @@
+.block:not(.first) {
+  background-color: #000;
+  height: 200px;
+  width: 300px;
+  border: 4px red solid;
+  margin-bottom: 20px;
+}
+
+.first {
+  background-color: #000;
+  height: 200px;
+  width: 300px;
+  border: 4px red solid;
+  margin-bottom: 20px;
+}
+
+/*# sourceMappingURL=style.css.map */

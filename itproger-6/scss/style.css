@@ -1,0 +1,74 @@
+a {
+  color: #000;
+}
+a:hover {
+  color: #990000;
+}
+a:active {
+  color: blue;
+}
+a:visited {
+  color: green;
+}
+
+#grid {
+  float: left;
+  width: 100%;
+}
+#grid > div {
+  float: left;
+  background: red;
+  margin-right: 5%;
+  margin-bottom: 5%;
+  height: 150px;
+  width: 21.25%;
+}
+#grid > div:nth-child(4n) {
+  margin-right: 0;
+}
+
+.block:not(.first) {
+  padding: 20px 40px 30px;
+  background-color: #000;
+  height: 200px;
+  width: 300px;
+  border: 4px red solid;
+  margin-bottom: 20px;
+}
+
+.center_block {
+  padding: 30px;
+}
+.center_block ul {
+  list-style: none;
+  display: inline-block;
+}
+.center_block li {
+  float: left;
+  width: 25%;
+}
+.center_block li a {
+  font-size: 1.1em;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bold;
+  color: blue;
+}
+.center_block a {
+  font-size: 1.1em;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bold;
+  color: #cccccc;
+}
+.center_block a:hover {
+  color: red;
+}
+
+.first {
+  background-color: #000;
+  height: 200px;
+  width: 300px;
+  border: 4px red solid;
+  margin-bottom: 20px;
+}
+
+/*# sourceMappingURL=style.css.map */

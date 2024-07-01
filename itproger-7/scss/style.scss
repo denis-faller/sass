@@ -1,0 +1,71 @@
+// Comment
+@import "variables";
+@import "mixins";
+
+a{
+    @include link(#000, red, blue, green);
+}
+
+.header a{
+    @include link(#000, red, blue, green){
+        background-color: #000;
+
+        &:visited{
+            color: red;
+        }
+    }
+}
+
+#grid{
+    float: left;
+    width: 100%;
+    >div{
+        @include grid(4, 5%)
+    }
+}
+
+.block:not(.first){
+    @include padd(20px 40px 30px);
+    background-color: $bgcolor;
+    height: 200px;
+    width: $blockWidth;
+    border: $border;
+    margin-bottom: 20px;
+}
+.center_block{
+    padding: 30px;
+    ul{
+        list-style: none;
+        display: inline-block;
+    }
+    li{
+        float: left;
+        width: (100% / 4);
+
+        a{
+            @include font(blue);
+        }
+    }
+    a{
+        @include font(#cccccc);
+
+        &:hover{
+            color: red;
+        }
+    }
+}
+
+.first{
+    background-color: $bgcolor;
+    height: 200px;
+    width: $blockWidth;
+    border: $border;
+    margin-bottom: 20px;
+}
+
+@for $i from 24 to 29{
+    .class-#{$i}{
+        width: 50px + $i;
+        height: 50px + $i;
+    }
+}

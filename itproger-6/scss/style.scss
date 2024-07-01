@@ -1,0 +1,54 @@
+// Comment
+@import "variables";
+@import "mixins";
+
+a{
+    @include link(#000, red, blue, green);
+}
+
+#grid{
+    float: left;
+    width: 100%;
+    >div{
+        @include grid(4, 5%)
+    }
+}
+
+.block:not(.first){
+    @include padd(20px 40px 30px);
+    background-color: $bgcolor;
+    height: 200px;
+    width: $blockWidth;
+    border: $border;
+    margin-bottom: 20px;
+}
+.center_block{
+    padding: 30px;
+    ul{
+        list-style: none;
+        display: inline-block;
+    }
+    li{
+        float: left;
+        width: (100% / 4);
+
+        a{
+            @include font(blue);
+        }
+    }
+    a{
+        @include font(#cccccc);
+
+        &:hover{
+            color: red;
+        }
+    }
+}
+
+.first{
+    background-color: $bgcolor;
+    height: 200px;
+    width: $blockWidth;
+    border: $border;
+    margin-bottom: 20px;
+}

@@ -1,0 +1,27 @@
+@mixin font ($fontColor: red, $fontW: bold){
+    font-size: $mainFontSize;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: $fontW;
+    color: $fontColor;
+}
+
+@mixin padd($padd...){
+    padding: $padd;
+}
+
+@mixin link($link, $hover, $active, $visited){
+
+    color: $link;
+
+    &:hover{
+        color: $hover;
+    }
+
+    &:active{
+        color: $active
+    }
+
+    &:visited{
+        color: $visited;
+    }
+}

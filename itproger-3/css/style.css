@@ -1,0 +1,35 @@
+.block:not(.first) {
+  background-color: #000;
+  height: 200px;
+  width: 300px;
+  border: 4px red solid;
+  margin-bottom: 20px;
+}
+
+.center_block {
+  padding: 30px;
+}
+.center_block ul {
+  list-style: none;
+  display: inline-block;
+}
+.center_block li {
+  float: left;
+  margin-right: 10px;
+}
+.center_block li a {
+  color: blue;
+}
+.center_block a {
+  color: #cccccc;
+}
+
+.first {
+  background-color: #000;
+  height: 200px;
+  width: 300px;
+  border: 4px red solid;
+  margin-bottom: 20px;
+}
+
+/*# sourceMappingURL=style.css.map */

@@ -1,0 +1,38 @@
+// Comment
+$bgcolor: #000;
+$blockWidth: 300px;
+$border: 4px red solid;
+
+.block:not(.first){
+    background-color: $bgcolor;
+    height: 200px;
+    width: $blockWidth;
+    border: $border;
+    margin-bottom: 20px;
+}
+.center_block{
+    padding: 30px;
+    ul{
+        list-style: none;
+        display: inline-block;
+    }
+    li{
+        float: left;
+        margin-right: 10px;
+
+        a{
+            color: blue;
+        }
+    }
+    a{
+        color: #cccccc;
+    }
+}
+
+.first{
+    background-color: $bgcolor;
+    height: 200px;
+    width: $blockWidth;
+    border: $border;
+    margin-bottom: 20px;
+}

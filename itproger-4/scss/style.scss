@@ -1,0 +1,51 @@
+// Comment
+$bgcolor: #000;
+$blockWidth: 300px;
+$border: 4px red solid;
+$mainFontSize: 1.1em;
+
+@mixin font ($fontColor: red, $fontW: bold){
+    font-size: $mainFontSize;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: $fontW;
+    color: $fontColor;
+}
+
+@mixin padd($padd...){
+    padding: $padd;
+}
+
+.block:not(.first){
+    @include padd(20px 40px 30px);
+    background-color: $bgcolor;
+    height: 200px;
+    width: $blockWidth;
+    border: $border;
+    margin-bottom: 20px;
+}
+.center_block{
+    padding: 30px;
+    ul{
+        list-style: none;
+        display: inline-block;
+    }
+    li{
+        float: left;
+        margin-right: 10px;
+
+        a{
+            @include font(blue);
+        }
+    }
+    a{
+        @include font(#cccccc);
+    }
+}
+
+.first{
+    background-color: $bgcolor;
+    height: 200px;
+    width: $blockWidth;
+    border: $border;
+    margin-bottom: 20px;
+}
